@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        >
+    <php>
+        <var name="DB_HOST" value="localhost" />
+        <var name="DB_USER" value="root" />
+        <var name="DB_PASSWD" value="1234" />
+        <var name="DB_NAME" value="account_manager" />
+    </php>
+    <testsuites>
+        <testsuite name="Pagination Test Suite">
+            <directory>./src/Kilte/Pagination/Tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

@@ -1,0 +1,24 @@
+{
+    "name": "kilte/pagination",
+    "type": "library",
+    "description": "Simple pagination",
+    "keywords": ["pagination"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kilte Leichnam",
+            "email": "nwotnbm@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~3.7"
+    },
+    "autoload": {
+        "psr-0": {
+            "Kilte\\Pagination": "src"
+        }
+    }
+}
