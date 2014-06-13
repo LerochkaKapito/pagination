@@ -133,16 +133,16 @@ class Pagination
         $limit  = $this->currentPage - $this->neighbours;
         $limit  = $limit < self::BASE_PAGE ? self::BASE_PAGE : $limit;
         for ($i = $offset; $i >= $limit; $i--) {
-            $output[$i] = $i;
+            $output[$i] = 'previous';
         }
 
         if ($limit - self::BASE_PAGE >= 2) {
-            $output[$limit - 1] = '...';
+            $output[$limit - 1] = 'less';
         }
 
         // First
         if ($this->currentPage - $this->neighbours > self::BASE_PAGE) {
-            $output[self::BASE_PAGE] = self::BASE_PAGE;
+            $output[self::BASE_PAGE] = 'first';
         }
 
         // Next
@@ -150,20 +150,20 @@ class Pagination
         $limit  = $this->currentPage + $this->neighbours;
         $limit  = $limit > $this->totalPages ? $this->totalPages : $limit;
         for ($i = $offset; $i <= $limit; $i++) {
-            $output[$i] = $i;
+            $output[$i] = 'next';
         }
 
         if ($this->totalPages - $limit > 0) {
-            $output[$limit + 1] = '...';
+            $output[$limit + 1] = 'more';
         }
 
         // Last
         if ($this->currentPage + $this->neighbours < $this->totalPages) {
-            $output[$this->totalPages] = $this->totalPages;
+            $output[$this->totalPages] = 'last';
         }
 
         // Current
-        $output[$this->currentPage] = false;
+        $output[$this->currentPage] = 'current';
 
         ksort($output);
 
