@@ -17,19 +17,19 @@ The simple pagination
     // For example:
     /*
         array(
-            1 => 1,
-            5 => "...",
-            6 => 6, // This  interval
-            7 => 7, // defined
-            8 => 8, // by
-            9 => 9, // $neighbours argument
-            10 => false, // Current page
-            11 => 11,
-            12 => 12,
-            13 => 13,
-            14 => 14,
-            15 => "...",
-            20 => 20
+            1 => 'first',
+            5 => 'less',
+            6 => 'previous', // This interval
+            7 => 'previous', // is defined
+            8 => 'previous', // by
+            9 => 'previous', // $neighbours argument
+            10 => 'current', // Current page
+            11 => 'next',
+            12 => 'next',
+            13 => 'next',
+            14 => 'next',
+            15 => 'more',
+            20 => 'last'
         )
     */
 
