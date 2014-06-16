@@ -16,11 +16,45 @@ namespace Kilte\Pagination;
  */
 class Pagination
 {
-
     /**
      * Number of the first page
      */
     const BASE_PAGE = 1;
+
+    /**
+     * First page
+     */
+    const TAG_FIRST = 'first';
+
+    /**
+     * The page before the previous neighbour pages
+     */
+    const TAG_LESS = 'less';
+
+    /**
+     * Previous pages
+     */
+    const TAG_PREVIOUS = 'previous';
+
+    /**
+     * Current page
+     */
+    const TAG_CURRENT = 'current';
+
+    /**
+     * Next pages
+     */
+    const TAG_NEXT = 'next';
+
+    /**
+     * The page after the next neighbour pages
+     */
+    const TAG_MORE = 'more';
+
+    /**
+     * Last page
+     */
+    const TAG_LAST = 'last';
 
     /**
      * @var int Total Items
@@ -133,16 +167,16 @@ class Pagination
         $limit  = $this->currentPage - $this->neighbours;
         $limit  = $limit < self::BASE_PAGE ? self::BASE_PAGE : $limit;
         for ($i = $offset; $i >= $limit; $i--) {
-            $output[$i] = 'previous';
+            $output[$i] = self::TAG_PREVIOUS;
         }
 
         if ($limit - self::BASE_PAGE >= 2) {
-            $output[$limit - 1] = 'less';
+            $output[$limit - 1] = self::TAG_LESS;
         }
 
         // First
         if ($this->currentPage - $this->neighbours > self::BASE_PAGE) {
-            $output[self::BASE_PAGE] = 'first';
+            $output[self::BASE_PAGE] = self::TAG_FIRST;
         }
 
         // Next
@@ -150,20 +184,20 @@ class Pagination
         $limit  = $this->currentPage + $this->neighbours;
         $limit  = $limit > $this->totalPages ? $this->totalPages : $limit;
         for ($i = $offset; $i <= $limit; $i++) {
-            $output[$i] = 'next';
+            $output[$i] = self::TAG_NEXT;
         }
 
         if ($this->totalPages - $limit > 0) {
-            $output[$limit + 1] = 'more';
+            $output[$limit + 1] = self::TAG_MORE;
         }
 
         // Last
         if ($this->currentPage + $this->neighbours < $this->totalPages) {
-            $output[$this->totalPages] = 'last';
+            $output[$this->totalPages] = self::TAG_LAST;
         }
 
         // Current
-        $output[$this->currentPage] = 'current';
+        $output[$this->currentPage] = self::TAG_CURRENT;
 
         ksort($output);
 
