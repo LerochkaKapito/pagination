@@ -69,6 +69,17 @@ Now you can to remove your branch:
     git branch -d awesome-feature
     git push origin :awesome-feature
 
+## CHANGELOG
+
+### 1.1.0 \[16.06.2014\]
+
+- Improved pages array to include relative positions
+- Added constants to define position tags
+
+### 1.0.0 \[25.02.2014\]
+
+- Initial release
+
 # LICENSE
 
 The MIT License (MIT)
