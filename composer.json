@@ -17,8 +17,8 @@
         "phpunit/phpunit": "~4.1"
     },
     "autoload": {
-        "psr-0": {
-            "Kilte\\Pagination": "src"
+        "psr-4": {
+            "Kilte\\Pagination\\": "src/Kilte/Pagination"
         }
     }
 }
