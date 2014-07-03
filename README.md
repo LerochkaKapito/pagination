@@ -2,6 +2,8 @@
 
 The simple pagination
 
+[![Build Status](https://travis-ci.org/Kilte/pagination.svg?branch=master)](https://travis-ci.org/Kilte/pagination)
+
 ## Requirements
 
 - PHP >= 5.3.3
