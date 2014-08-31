@@ -78,7 +78,7 @@ Now you can to remove your branch:
 
 ## CHANGELOG
 
-### 1.1.1 \[31.01.2014\]
+### 1.1.1 \[31.08.2014\]
 
 - Small improvements
 
