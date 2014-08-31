@@ -8,7 +8,15 @@
         >
     <testsuites>
         <testsuite name="Pagination Test Suite">
-            <directory>./src/Kilte/Pagination/Tests</directory>
+            <directory>source</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+            <directory>source</directory>
+            <exclude>
+                <directory>source/Tests</directory>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>

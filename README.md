@@ -4,9 +4,11 @@ The simple pagination
 
 [![Build Status](https://travis-ci.org/Kilte/pagination.svg?branch=master)](https://travis-ci.org/Kilte/pagination)
 
+
 ## Requirements
 
 - PHP >= 5.3.3
+
 
 ## Usage
 
@@ -40,12 +42,14 @@ $pages = $pagination->build(); // Contains associative array with a numbers of a
 Note: Tags (like *first*, *current*, ...) are defined as constants in the Pagination class
 (```TAG_FIRST```, ```TAG_CURRENT```, ...).
 
+
 ## Tests
 
 ```bash
-$ composer install --dev
+$ composer install
 $ vendor/bin/phpunit
 ```
+
 
 ## Contributing
 
@@ -71,7 +75,12 @@ Now you can to remove your branch:
     git branch -d awesome-feature
     git push origin :awesome-feature
 
+
 ## CHANGELOG
+
+### 1.1.1 \[31.01.2014\]
+
+- Small improvements
 
 ### 1.1.0 \[16.06.2014\]
 
@@ -81,6 +90,7 @@ Now you can to remove your branch:
 ### 1.0.0 \[25.02.2014\]
 
 - Initial release
+
 
 # LICENSE
 
