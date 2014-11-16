@@ -2,8 +2,9 @@
 
 The simple pagination
 
-[![Build Status](https://travis-ci.org/Kilte/pagination.svg?branch=master)](https://travis-ci.org/Kilte/pagination)
-
+[![Build Status](http://img.shields.io/travis/Kilte/pagination.svg?style=flat-square)](https://travis-ci.org/Kilte/pagination)
+[![Downloads](http://img.shields.io/packagist/dt/kilte/pagination.svg?style=flat-square)](https://packagist.org/packages/kilte/pagination)
+[![License](http://img.shields.io/packagist/l/kilte/pagination.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 ## Requirements
 
