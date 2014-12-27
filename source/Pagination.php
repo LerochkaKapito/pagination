@@ -159,7 +159,7 @@ class Pagination
      */
     public function build()
     {
-        if ($this->totalItems == 0 || $this->perPage == 0 || $this->totalPages == 1) {
+        if ($this->totalItems == 0 || $this->totalPages == 1) {
             return array();
         }
 
