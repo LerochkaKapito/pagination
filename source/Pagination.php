@@ -216,5 +216,4 @@ class Pagination
 
         return $output;
     }
-
 }

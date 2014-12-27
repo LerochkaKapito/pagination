@@ -21,7 +21,6 @@ use Kilte\Pagination\Pagination;
  */
 class PaginationTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testOffset()
     {
         $pagination = new Pagination(10, 2, 5);
@@ -90,5 +89,4 @@ class PaginationTest extends \PHPUnit_Framework_TestCase
         $pagination = new Pagination(11, 1, 3);
         $this->assertEquals(4, $pagination->totalPages());
     }
-
 }
