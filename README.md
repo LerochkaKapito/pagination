@@ -79,6 +79,10 @@ Now you can to remove your branch:
 
 ## CHANGELOG
 
+### 1.1.2 \[27.12.2014\]
+
+- Added `totalPages()` method
+
 ### 1.1.1 \[31.08.2014\]
 
 - Small improvements

@@ -153,6 +153,16 @@ class Pagination
     }
 
     /**
+     * Returns number of the last page
+     *
+     * @return int
+     */
+    public function totalPages()
+    {
+        return $this->totalPages;
+    }
+
+    /**
      * Display
      *
      * @return array
