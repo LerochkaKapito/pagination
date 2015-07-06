@@ -1,23 +1,19 @@
 <?php
 
 /**
- * Part of the Pagination
+ * Part of the Pagination.
  *
  * For the full copyright and license information,
  * view the LICENSE file that was distributed with this source code.
  *
  * @author  Kilte Leichnam <nwotnbm@gmail.com>
- * @package Pagination
  */
-
 namespace Kilte\Pagination\Tests;
 
 use Kilte\Pagination\Pagination;
 
 /**
- * PaginationTest Class
- *
- * @package Kilte\Pagination\Tests
+ * PaginationTest Class.
  */
 class PaginationTest extends \PHPUnit_Framework_TestCase
 {
@@ -44,20 +40,20 @@ class PaginationTest extends \PHPUnit_Framework_TestCase
         $pagination = new Pagination(1000, 40, 10, 5);
         $this->assertEquals(
             array(
-                1   => Pagination::TAG_FIRST,
-                34  => Pagination::TAG_LESS,
-                35  => Pagination::TAG_PREVIOUS,
-                36  => Pagination::TAG_PREVIOUS,
-                37  => Pagination::TAG_PREVIOUS,
-                38  => Pagination::TAG_PREVIOUS,
-                39  => Pagination::TAG_PREVIOUS,
-                40  => Pagination::TAG_CURRENT,
-                41  => Pagination::TAG_NEXT,
-                42  => Pagination::TAG_NEXT,
-                43  => Pagination::TAG_NEXT,
-                44  => Pagination::TAG_NEXT,
-                45  => Pagination::TAG_NEXT,
-                46  => Pagination::TAG_MORE,
+                1 => Pagination::TAG_FIRST,
+                34 => Pagination::TAG_LESS,
+                35 => Pagination::TAG_PREVIOUS,
+                36 => Pagination::TAG_PREVIOUS,
+                37 => Pagination::TAG_PREVIOUS,
+                38 => Pagination::TAG_PREVIOUS,
+                39 => Pagination::TAG_PREVIOUS,
+                40 => Pagination::TAG_CURRENT,
+                41 => Pagination::TAG_NEXT,
+                42 => Pagination::TAG_NEXT,
+                43 => Pagination::TAG_NEXT,
+                44 => Pagination::TAG_NEXT,
+                45 => Pagination::TAG_NEXT,
+                46 => Pagination::TAG_MORE,
                 100 => Pagination::TAG_LAST,
             ),
             $pagination->build()

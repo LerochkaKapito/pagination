@@ -1,61 +1,57 @@
 <?php
 
 /**
- * Part of the Pagination
+ * Part of the Pagination.
  *
  * For the full copyright and license information,
  * view the LICENSE file that was distributed with this source code.
  *
  * @author  Kilte Leichnam <nwotnbm@gmail.com>
- * @package Pagination
  */
-
 namespace Kilte\Pagination;
 
 /**
- * Pagination Class
- *
- * @package Kilte\Pagination
+ * Pagination Class.
  */
 class Pagination
 {
     /**
-     * Number of the first page
+     * Number of the first page.
      */
     const BASE_PAGE = 1;
 
     /**
-     * First page
+     * First page.
      */
     const TAG_FIRST = 'first';
 
     /**
-     * The page before the previous neighbour pages
+     * The page before the previous neighbour pages.
      */
     const TAG_LESS = 'less';
 
     /**
-     * Previous pages
+     * Previous pages.
      */
     const TAG_PREVIOUS = 'previous';
 
     /**
-     * Current page
+     * Current page.
      */
     const TAG_CURRENT = 'current';
 
     /**
-     * Next pages
+     * Next pages.
      */
     const TAG_NEXT = 'next';
 
     /**
-     * The page after the next neighbour pages
+     * The page after the next neighbour pages.
      */
     const TAG_MORE = 'more';
 
     /**
-     * Last page
+     * Last page.
      */
     const TAG_LAST = 'last';
 
@@ -90,7 +86,7 @@ class Pagination
     private $neighbours;
 
     /**
-     * Create instance
+     * Create instance.
      *
      * @param int $totalItems  Total items
      * @param int $currentPage Number of the current page
@@ -98,14 +94,15 @@ class Pagination
      * @param int $neighbours  Number of neighboring pages at the left and the right sides
      *
      * @throws \LogicException
+     *
      * @return self
      */
     public function __construct($totalItems, $currentPage, $perPage, $neighbours = 4)
     {
-        $this->totalItems  = (int) $totalItems;
+        $this->totalItems = (int) $totalItems;
         $this->currentPage = (int) $currentPage;
-        $this->perPage     = (int) $perPage;
-        $this->neighbours  = (int) $neighbours;
+        $this->perPage = (int) $perPage;
+        $this->neighbours = (int) $neighbours;
         if ($this->perPage <= 0) {
             throw new \LogicException('Items per page must be at least 1');
         }
@@ -123,7 +120,7 @@ class Pagination
     }
 
     /**
-     * Returns the offset of the list's slice for the current page
+     * Returns the offset of the list's slice for the current page.
      *
      * @return int
      */
@@ -133,7 +130,7 @@ class Pagination
     }
 
     /**
-     * Returns the limit of the list's slice for the current page
+     * Returns the limit of the list's slice for the current page.
      *
      * @return int
      */
@@ -143,7 +140,7 @@ class Pagination
     }
 
     /**
-     * Returns number of the current page
+     * Returns number of the current page.
      *
      * @return int
      */
@@ -153,7 +150,7 @@ class Pagination
     }
 
     /**
-     * Returns number of the last page
+     * Returns number of the last page.
      *
      * @return int
      */
@@ -163,7 +160,7 @@ class Pagination
     }
 
     /**
-     * Display
+     * Display.
      *
      * @return array
      */
@@ -177,8 +174,8 @@ class Pagination
 
         // Previous
         $offset = $this->currentPage - 1;
-        $limit  = $this->currentPage - $this->neighbours;
-        $limit  = $limit < self::BASE_PAGE ? self::BASE_PAGE : $limit;
+        $limit = $this->currentPage - $this->neighbours;
+        $limit = $limit < self::BASE_PAGE ? self::BASE_PAGE : $limit;
         for ($i = $offset; $i >= $limit; $i--) {
             $output[$i] = self::TAG_PREVIOUS;
         }
@@ -194,8 +191,8 @@ class Pagination
 
         // Next
         $offset = $this->currentPage + 1;
-        $limit  = $this->currentPage + $this->neighbours;
-        $limit  = $limit > $this->totalPages ? $this->totalPages : $limit;
+        $limit = $this->currentPage + $this->neighbours;
+        $limit = $limit > $this->totalPages ? $this->totalPages : $limit;
         for ($i = $offset; $i <= $limit; $i++) {
             $output[$i] = self::TAG_NEXT;
         }
