@@ -2,14 +2,14 @@
 
 The simple pagination
 
-[![Build Status](http://img.shields.io/travis/Kilte/pagination.svg?style=flat-square)](https://travis-ci.org/Kilte/pagination)
-[![Downloads](http://img.shields.io/packagist/dt/kilte/pagination.svg?style=flat-square)](https://packagist.org/packages/kilte/pagination)
-[![License](http://img.shields.io/packagist/l/kilte/pagination.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/travis/Kilte/pagination.svg?style=flat-square)](https://travis-ci.org/Kilte/pagination)
+[![Downloads](https://img.shields.io/packagist/dt/kilte/pagination.svg?style=flat-square)](https://packagist.org/packages/kilte/pagination)
+[![License](https://img.shields.io/packagist/l/kilte/pagination.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/fd98f4ee-e07d-40d8-b25a-7b8b0e59ca3b.svg?style=flat-square)](https://insight.sensiolabs.com/projects/fd98f4ee-e07d-40d8-b25a-7b8b0e59ca3b)
 
 ## Requirements
 
 - PHP >= 5.3.3
-
 
 ## Usage
 
@@ -43,14 +43,12 @@ $pages = $pagination->build(); // Contains associative array with a numbers of a
 Note: Tags (like *first*, *current*, ...) are defined as constants in the Pagination class
 (```TAG_FIRST```, ```TAG_CURRENT```, ...).
 
-
 ## Tests
 
 ```bash
 $ composer install
 $ vendor/bin/phpunit
 ```
-
 
 ## Contributing
 
@@ -76,7 +74,6 @@ Now you can to remove your branch:
     git branch -d awesome-feature
     git push origin :awesome-feature
 
-
 ## CHANGELOG
 
 ### 1.1.2 \[27.12.2014\]
@@ -95,7 +92,6 @@ Now you can to remove your branch:
 ### 1.0.0 \[25.02.2014\]
 
 - Initial release
-
 
 # LICENSE
 
