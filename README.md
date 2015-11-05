@@ -1,5 +1,7 @@
 # Pagination
 
+**This project is looking for a maintainer. Please get in touch with [nwotnbm at gmail].**
+
 The simple pagination
 
 [![Build Status](https://img.shields.io/travis/Kilte/pagination.svg?style=flat-square)](https://travis-ci.org/Kilte/pagination)
