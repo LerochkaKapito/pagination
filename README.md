@@ -4,10 +4,8 @@
 
 The simple pagination
 
-[![Build Status](https://img.shields.io/travis/Kilte/pagination.svg?style=flat-square)](https://travis-ci.org/Kilte/pagination)
 [![Downloads](https://img.shields.io/packagist/dt/kilte/pagination.svg?style=flat-square)](https://packagist.org/packages/kilte/pagination)
 [![License](https://img.shields.io/packagist/l/kilte/pagination.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/fd98f4ee-e07d-40d8-b25a-7b8b0e59ca3b.svg?style=flat-square)](https://insight.sensiolabs.com/projects/fd98f4ee-e07d-40d8-b25a-7b8b0e59ca3b)
 
 ## Requirements
 
