@@ -1,5 +1,5 @@
 {
-    "name": "kilte/pagination",
+    "name": "amstaffix/pagination",
     "type": "library",
     "description": "Simple pagination",
     "keywords": ["pagination"],
@@ -8,6 +8,10 @@
         {
             "name": "Kilte Leichnam",
             "email": "nwotnbm@gmail.com"
+        },
+        {
+            "name": "Nikita Sapogov",
+            "email": "amstaffix@gmail.com"
         }
     ],
     "require": {
