@@ -1,8 +1,8 @@
 ### 1.1.3 \[26.01.2016\]
 
-- Edited README.md
-- Added CHANGELOG.md and removed changelogs from README.md
-- Added CONTRIBUTION.md and removed contribution instruction from README.md
+- Edited [README.md](README.md)
+- Added [CHANGELOG.md](CHANGELOG.md) and removed changelogs from [README.md](README.md)
+- Added [CONTRIBUTION.md](CONTRIBUTION.md) and removed contribution instruction from [README.md](README.md)
 - New maintainer of the repo
 
 ### 1.1.2 \[27.12.2014\]
