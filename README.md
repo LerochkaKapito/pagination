@@ -4,8 +4,8 @@
 
 The simple pagination
 
-[![Downloads](https://img.shields.io/packagist/dt/kilte/pagination.svg?style=flat-square)](https://packagist.org/packages/kilte/pagination)
-[![License](https://img.shields.io/packagist/l/kilte/pagination.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![Downloads](https://img.shields.io/packagist/dt/amstaffix/pagination.svg?style=flat-square)](https://packagist.org/packages/amstaffix/pagination)
+[![License](https://img.shields.io/packagist/l/amstaffix/pagination.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 ## Requirements
 
