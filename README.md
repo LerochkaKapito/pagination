@@ -1,7 +1,5 @@
 # Pagination
 
-**This project is looking for a maintainer. Please get in touch with [nwotnbm at gmail].**
-
 The simple pagination
 
 [![Downloads](https://img.shields.io/packagist/dt/amstaffix/pagination.svg?style=flat-square)](https://packagist.org/packages/amstaffix/pagination)
@@ -52,46 +50,11 @@ $ vendor/bin/phpunit
 
 ## Contributing
 
-- Fork it
-- Create your feature branch (git checkout -b awesome-feature)
-- Make your changes
-- Write/update tests, if it necessary
-- Update `README.md`, if it necessary
-- Push your branch to origin (git push origin awesome-feature)
-- Send pull request
-- ???
-- PROFIT!!!
-
-Do not forget merge upstream changes:
-
-    git remote add upstream https://github.com/Kilte/pagination
-    git checkout master
-    git pull upstream
-    git push origin master
-
-Now you can to remove your branch:
-
-    git branch -d awesome-feature
-    git push origin :awesome-feature
+[Contribution process](CONTRIBUTING.md)
 
 ## CHANGELOG
 
-### 1.1.2 \[27.12.2014\]
-
-- Added `totalPages()` method
-
-### 1.1.1 \[31.08.2014\]
-
-- Small improvements
-
-### 1.1.0 \[16.06.2014\]
-
-- Improved pages array to include relative positions
-- Added constants to define position tags
-
-### 1.0.0 \[25.02.2014\]
-
-- Initial release
+[Changelog](CHANGELOG.md)
 
 # LICENSE
 
