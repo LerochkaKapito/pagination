@@ -113,7 +113,7 @@ class Pagination
             $this->currentPage = self::BASE_PAGE;
         }
         $this->totalPages = (int) ceil($this->totalItems / $this->perPage);
-        if ($this->currentPage > $this->totalPages) {
+        if ($this->currentPage > $this->totalPages && $this->totalPages > 0) {
             $this->currentPage = $this->totalPages;
         }
         $this->offset = abs(intval($this->currentPage * $this->perPage - $this->perPage));
