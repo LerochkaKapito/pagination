@@ -21,6 +21,8 @@ class PaginationTest extends \PHPUnit_Framework_TestCase
     {
         $pagination = new Pagination(10, 2, 5);
         $this->assertEquals(5, $pagination->offset());
+        $pagination = new Pagination(0, 1, 5);
+        $this->assertEquals(0, $pagination->offset());
     }
 
     public function testLimit()
@@ -33,6 +35,8 @@ class PaginationTest extends \PHPUnit_Framework_TestCase
     {
         $pagination = new Pagination(20, 2, 10);
         $this->assertEquals(2, $pagination->currentPage());
+        $pagination = new Pagination(0, 1, 10);
+        $this->assertEquals(1, $pagination->currentPage());
     }
 
     public function testBuild()
@@ -84,5 +88,7 @@ class PaginationTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(5, $pagination->totalPages());
         $pagination = new Pagination(11, 1, 3);
         $this->assertEquals(4, $pagination->totalPages());
+        $pagination = new Pagination(0, 1, 4);
+        $this->assertEquals(0, $pagination->totalPages());
     }
 }
